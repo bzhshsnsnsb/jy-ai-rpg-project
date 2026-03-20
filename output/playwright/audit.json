@@ -1,0 +1,586 @@
+{
+  "reports": [
+    {
+      "url": "http://localhost:5173/",
+      "title": "ai-rpg-balance-studio",
+      "bodyText": "新项目\n数据库 > 项目规则\n已保存\n保存\n校验\n模拟\n导入\n快照\n引导\n数据库\n项目规则\n(7)\n自定义属性\n回合模型\n资源模型\n站位/网格\n伤害公式\n元素系统\n胜负条件\n角色\n(5)\n主角团\n(4)\n敌方可控\nNPC战斗\n测试角色\nBoss模板\n职业/派系\n(4)\n战士\n法师\n牧师\n刺客\n技能/状态\n(2)\n技能\n(6)\n状态\n(24)\n装备\n(5)\n武器\n(2)\n防具\n(2)\n饰品\n(1)\n专属装备\n测试装备\n道具\n(6)\n恢复\n(2)\n复活\n(1)\n增益\n战斗消耗品\n任务道具\n关键道具\n敌人资产\n(5)\n小怪\n(1)\n精英\n(1)\nBoss\n(2)\n召唤物\n(1)\n测试敌人\n(1)\n敌群/遭遇\n(5)\n普通遭遇\n(1)\n精英战\n(1)\nBoss战\n(2)\n教学战\n(1)\n测试遭遇\n(1)\n地图/关卡\n(1)\n(无地图)\n模拟/分析\n(3)\n战前准备\n对战模拟\n数值平衡分析\n新建\n项目规则\n自定义属性\n回合模型\n资源模型\n站位模型\n伤害公式\n元素系统\n胜负条件\n属性数据表\n添加属性\n\tID\t名称\t类型\t默认值\t单位\t显示\t参与公式\t状态\t\n\n\t\t\t\n数值\n百分比\n布尔\n文本\n\t\n-\n+\n\t\t\t-\t\n\t\n\n\n\t\t\t\n数值\n百分比\n布尔\n文本\n\t\n-\n+\n\t\t\t-\t\n\t\n\n\n\t\t\t\n数值\n百分比\n布尔\n文本\n\t\n-\n+\n\t\t\t-\t\n\t\n\n\n\t\t\t\n数值\n百分比\n布尔\n文本\n\t\n-\n+\n\t\t\t-\t\n\t\n\n\n\t\t\t\n数值\n百分比\n布尔\n文本\n\t\n-\n+\n\t\t\t-\t\n\t\n\n\n\t\t\t\n数值\n百分比\n布尔\n文本\n\t\n-\n+\n\t\t\t-\t\n\t\n\n\n\t\t\t\n数值\n百分比\n布尔\n文本\n\t\n-\n+\n\t\t\t-\t\n\t\n\n\n\t\t\t\n数值\n百分比\n布尔\n文本\n\t\n-\n+\n\t\t\t-\t\n\t\n\n\n\t\t\t\n数值\n百分比\n布尔\n文本\n\t\n-\n+\n\t\t\t-\t\n\t\n\n\n\t\t\t\n数值\n百分比\n布尔\n文本\n\t\n-\n+\n\t\t\t-\t\n\t\n\n\n\t\t\t\n数值\n百分比\n布尔\n文本\n\t\n-\n+\n\t\t\t-\t\n\t\n\n\n\t\t\t\n数值\n百分比\n布尔\n文本\n\t\n-\n+\n\t\t\t-\t\n\t\n\n\n\t\t\t\n数值\n百分比\n布尔\n文本\n\t\n-\n+\n\t\t\t-\t\n\t\n战斗日志\n5\n报错\n2\n公式控制台\n批量修改\n版本对比\n模拟结果\n更多面板\n[14:30:25]\nSYSTEM\n系统初始化完成\n[14:30:26]\nINFO\n加载项目数据...\n[14:30:26]\nINFO\n项目规则已加载\n[14:30:27]\nWARN\n缺少默认元素配置\n[14:30:27]\nSYSTEM\n等待用户操作\n检视\n助手\n检视\n页面摘要\n当前实体\n自定义属性\n完成度\n13/13\n阻塞项\n0\n告警项\n1\n属性数\n13\n百分比属性\n4\n缺单位\n1\n属性\n内部键名\n-\n引用关系\n谁引用当前实体\n暂无引用\n当前实体引用了谁\n暂无引用\n风险提示\n1\n警告\n属性\"抗性\"缺少单位\n下一步\n中优先级\n完善: 属性\"抗性\"缺少单位\n立即处理",
+      "buttons": [
+        "保存",
+        "校验",
+        "模拟",
+        "导入",
+        "快照",
+        "引导",
+        "新建",
+        "自定义属性",
+        "回合模型",
+        "资源模型",
+        "站位模型",
+        "伤害公式",
+        "元素系统",
+        "胜负条件",
+        "添加属性",
+        "-",
+        "+",
+        "-",
+        "+",
+        "-",
+        "+",
+        "-",
+        "+",
+        "-",
+        "+",
+        "-",
+        "+",
+        "-",
+        "+",
+        "-",
+        "+",
+        "-",
+        "+",
+        "-",
+        "+",
+        "-",
+        "+",
+        "-",
+        "+",
+        "-",
+        "+",
+        "战斗日志5",
+        "报错2",
+        "公式控制台",
+        "批量修改",
+        "版本对比",
+        "模拟结果",
+        "更多面板",
+        "检视",
+        "助手",
+        "立即处理"
+      ],
+      "inputs": [
+        {
+          "tag": "INPUT",
+          "type": "text",
+          "placeholder": "搜索...",
+          "name": null
+        },
+        {
+          "tag": "INPUT",
+          "type": "text",
+          "placeholder": null,
+          "name": null
+        },
+        {
+          "tag": "INPUT",
+          "type": "text",
+          "placeholder": null,
+          "name": null
+        },
+        {
+          "tag": "SELECT",
+          "type": null,
+          "placeholder": null,
+          "name": null
+        },
+        {
+          "tag": "INPUT",
+          "type": "number",
+          "placeholder": null,
+          "name": null
+        },
+        {
+          "tag": "INPUT",
+          "type": "text",
+          "placeholder": "如: HP",
+          "name": null
+        },
+        {
+          "tag": "INPUT",
+          "type": "checkbox",
+          "placeholder": null,
+          "name": null
+        },
+        {
+          "tag": "INPUT",
+          "type": "text",
+          "placeholder": null,
+          "name": null
+        },
+        {
+          "tag": "INPUT",
+          "type": "text",
+          "placeholder": null,
+          "name": null
+        },
+        {
+          "tag": "SELECT",
+          "type": null,
+          "placeholder": null,
+          "name": null
+        },
+        {
+          "tag": "INPUT",
+          "type": "number",
+          "placeholder": null,
+          "name": null
+        },
+        {
+          "tag": "INPUT",
+          "type": "text",
+          "placeholder": "如: HP",
+          "name": null
+        },
+        {
+          "tag": "INPUT",
+          "type": "checkbox",
+          "placeholder": null,
+          "name": null
+        },
+        {
+          "tag": "INPUT",
+          "type": "text",
+          "placeholder": null,
+          "name": null
+        },
+        {
+          "tag": "INPUT",
+          "type": "text",
+          "placeholder": null,
+          "name": null
+        },
+        {
+          "tag": "SELECT",
+          "type": null,
+          "placeholder": null,
+          "name": null
+        },
+        {
+          "tag": "INPUT",
+          "type": "number",
+          "placeholder": null,
+          "name": null
+        },
+        {
+          "tag": "INPUT",
+          "type": "text",
+          "placeholder": "如: HP",
+          "name": null
+        },
+        {
+          "tag": "INPUT",
+          "type": "checkbox",
+          "placeholder": null,
+          "name": null
+        },
+        {
+          "tag": "INPUT",
+          "type": "text",
+          "placeholder": null,
+          "name": null
+        },
+        {
+          "tag": "INPUT",
+          "type": "text",
+          "placeholder": null,
+          "name": null
+        },
+        {
+          "tag": "SELECT",
+          "type": null,
+          "placeholder": null,
+          "name": null
+        },
+        {
+          "tag": "INPUT",
+          "type": "number",
+          "placeholder": null,
+          "name": null
+        },
+        {
+          "tag": "INPUT",
+          "type": "text",
+          "placeholder": "如: HP",
+          "name": null
+        },
+        {
+          "tag": "INPUT",
+          "type": "checkbox",
+          "placeholder": null,
+          "name": null
+        },
+        {
+          "tag": "INPUT",
+          "type": "text",
+          "placeholder": null,
+          "name": null
+        },
+        {
+          "tag": "INPUT",
+          "type": "text",
+          "placeholder": null,
+          "name": null
+        },
+        {
+          "tag": "SELECT",
+          "type": null,
+          "placeholder": null,
+          "name": null
+        },
+        {
+          "tag": "INPUT",
+          "type": "number",
+          "placeholder": null,
+          "name": null
+        },
+        {
+          "tag": "INPUT",
+          "type": "text",
+          "placeholder": "如: HP",
+          "name": null
+        },
+        {
+          "tag": "INPUT",
+          "type": "checkbox",
+          "placeholder": null,
+          "name": null
+        },
+        {
+          "tag": "INPUT",
+          "type": "text",
+          "placeholder": null,
+          "name": null
+        },
+        {
+          "tag": "INPUT",
+          "type": "text",
+          "placeholder": null,
+          "name": null
+        },
+        {
+          "tag": "SELECT",
+          "type": null,
+          "placeholder": null,
+          "name": null
+        },
+        {
+          "tag": "INPUT",
+          "type": "number",
+          "placeholder": null,
+          "name": null
+        },
+        {
+          "tag": "INPUT",
+          "type": "text",
+          "placeholder": "如: HP",
+          "name": null
+        },
+        {
+          "tag": "INPUT",
+          "type": "checkbox",
+          "placeholder": null,
+          "name": null
+        },
+        {
+          "tag": "INPUT",
+          "type": "text",
+          "placeholder": null,
+          "name": null
+        },
+        {
+          "tag": "INPUT",
+          "type": "text",
+          "placeholder": null,
+          "name": null
+        },
+        {
+          "tag": "SELECT",
+          "type": null,
+          "placeholder": null,
+          "name": null
+        },
+        {
+          "tag": "INPUT",
+          "type": "number",
+          "placeholder": null,
+          "name": null
+        },
+        {
+          "tag": "INPUT",
+          "type": "text",
+          "placeholder": "如: HP",
+          "name": null
+        },
+        {
+          "tag": "INPUT",
+          "type": "checkbox",
+          "placeholder": null,
+          "name": null
+        },
+        {
+          "tag": "INPUT",
+          "type": "text",
+          "placeholder": null,
+          "name": null
+        },
+        {
+          "tag": "INPUT",
+          "type": "text",
+          "placeholder": null,
+          "name": null
+        },
+        {
+          "tag": "SELECT",
+          "type": null,
+          "placeholder": null,
+          "name": null
+        },
+        {
+          "tag": "INPUT",
+          "type": "number",
+          "placeholder": null,
+          "name": null
+        },
+        {
+          "tag": "INPUT",
+          "type": "text",
+          "placeholder": "如: HP",
+          "name": null
+        },
+        {
+          "tag": "INPUT",
+          "type": "checkbox",
+          "placeholder": null,
+          "name": null
+        },
+        {
+          "tag": "INPUT",
+          "type": "text",
+          "placeholder": null,
+          "name": null
+        },
+        {
+          "tag": "INPUT",
+          "type": "text",
+          "placeholder": null,
+          "name": null
+        },
+        {
+          "tag": "SELECT",
+          "type": null,
+          "placeholder": null,
+          "name": null
+        },
+        {
+          "tag": "INPUT",
+          "type": "number",
+          "placeholder": null,
+          "name": null
+        },
+        {
+          "tag": "INPUT",
+          "type": "text",
+          "placeholder": "如: HP",
+          "name": null
+        },
+        {
+          "tag": "INPUT",
+          "type": "checkbox",
+          "placeholder": null,
+          "name": null
+        },
+        {
+          "tag": "INPUT",
+          "type": "text",
+          "placeholder": null,
+          "name": null
+        },
+        {
+          "tag": "INPUT",
+          "type": "text",
+          "placeholder": null,
+          "name": null
+        },
+        {
+          "tag": "SELECT",
+          "type": null,
+          "placeholder": null,
+          "name": null
+        },
+        {
+          "tag": "INPUT",
+          "type": "number",
+          "placeholder": null,
+          "name": null
+        },
+        {
+          "tag": "INPUT",
+          "type": "text",
+          "placeholder": "如: HP",
+          "name": null
+        },
+        {
+          "tag": "INPUT",
+          "type": "checkbox",
+          "placeholder": null,
+          "name": null
+        },
+        {
+          "tag": "INPUT",
+          "type": "text",
+          "placeholder": null,
+          "name": null
+        },
+        {
+          "tag": "INPUT",
+          "type": "text",
+          "placeholder": null,
+          "name": null
+        },
+        {
+          "tag": "SELECT",
+          "type": null,
+          "placeholder": null,
+          "name": null
+        },
+        {
+          "tag": "INPUT",
+          "type": "number",
+          "placeholder": null,
+          "name": null
+        },
+        {
+          "tag": "INPUT",
+          "type": "text",
+          "placeholder": "如: HP",
+          "name": null
+        },
+        {
+          "tag": "INPUT",
+          "type": "checkbox",
+          "placeholder": null,
+          "name": null
+        },
+        {
+          "tag": "INPUT",
+          "type": "text",
+          "placeholder": null,
+          "name": null
+        },
+        {
+          "tag": "INPUT",
+          "type": "text",
+          "placeholder": null,
+          "name": null
+        },
+        {
+          "tag": "SELECT",
+          "type": null,
+          "placeholder": null,
+          "name": null
+        },
+        {
+          "tag": "INPUT",
+          "type": "number",
+          "placeholder": null,
+          "name": null
+        },
+        {
+          "tag": "INPUT",
+          "type": "text",
+          "placeholder": "如: HP",
+          "name": null
+        },
+        {
+          "tag": "INPUT",
+          "type": "checkbox",
+          "placeholder": null,
+          "name": null
+        },
+        {
+          "tag": "INPUT",
+          "type": "text",
+          "placeholder": null,
+          "name": null
+        },
+        {
+          "tag": "INPUT",
+          "type": "text",
+          "placeholder": null,
+          "name": null
+        },
+        {
+          "tag": "SELECT",
+          "type": null,
+          "placeholder": null,
+          "name": null
+        },
+        {
+          "tag": "INPUT",
+          "type": "number",
+          "placeholder": null,
+          "name": null
+        },
+        {
+          "tag": "INPUT",
+          "type": "text",
+          "placeholder": "如: HP",
+          "name": null
+        },
+        {
+          "tag": "INPUT",
+          "type": "checkbox",
+          "placeholder": null,
+          "name": null
+        }
+      ]
+    },
+    {
+      "url": "http://localhost:5173/admin/ai",
+      "title": "ai-rpg-balance-studio",
+      "bodyText": "AI 管理后台\n用户名\n密码\n登录",
+      "buttons": [
+        "登录"
+      ],
+      "inputs": [
+        {
+          "tag": "INPUT",
+          "type": "text",
+          "placeholder": "请输入用户名",
+          "name": null
+        },
+        {
+          "tag": "INPUT",
+          "type": "password",
+          "placeholder": "请输入密码",
+          "name": null
+        }
+      ]
+    }
+  ],
+  "consoleMessages": [
+    {
+      "type": "debug",
+      "text": "[vite] connecting..."
+    },
+    {
+      "type": "info",
+      "text": "%cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold"
+    },
+    {
+      "type": "debug",
+      "text": "[vite] connected."
+    },
+    {
+      "type": "debug",
+      "text": "[vite] connecting..."
+    },
+    {
+      "type": "info",
+      "text": "%cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold"
+    },
+    {
+      "type": "debug",
+      "text": "[vite] connected."
+    }
+  ]
+}

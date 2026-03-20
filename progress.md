@@ -1,0 +1,53 @@
+Original prompt: 访问网站http://localhost:5173/，这是我的回合策略RPG游戏数值编辑的网站，http://localhost:5173/admin/ai是我的后端网站，仔细检查http://localhost:5173/，结合市面上较为热门的回合策略RPG游戏，站在独立游戏开发者的角度，去考虑一下我的网站数值设计是否合理，还需要哪些地方应该改进，哪些地方设计的不合理，功能方面有没有bug，你自己提出来问题自己进行更改，将功能升级并设计完善，下一次见到这个网站，我希望他是适合独立游戏开发者数值设计方面最完美的网站，如果你对回合策略RPG游戏不太理解，可以参考《铃兰之剑》《剑与远征》《天地劫：幽城再临》其他海内外市场特点明显的有戏
+
+2026-03-16
+- Initialized progress tracking.
+- Confirmed frontend is reachable at http://localhost:5173 and /admin/ai returns 200.
+- Reading core layout/store/editor files and preparing browser-based audit via local Playwright artifacts.
+- Found major simulation accuracy issues: allies defaulted to low starting HP, misses still dealt damage, magic/heal stats were poorly mapped, and turn counting was distorted.
+- Upgraded toolbar workflow with local project persistence, snapshot export/import, restore-on-load, and quick navigation into analysis.
+- Rebuilt the balance analysis workspace into a strategy-RPG-oriented dashboard with benchmark bands for win rate, fight pace, frontline depth, speed spread, carry concentration, and sustain coverage.
+- Wired Inspector "立即处理" to auto-fix missing attribute units for current project-rules issues and verified it updates the page.
+- Verified runtime via `npx vite build` and Playwright screenshots:
+  - `output/playwright/analysis-after-run-final4.png`
+  - `output/playwright/after-toolbar-index2.png`
+- Replaced the unstable character editor implementation with a stable registry/editor flow:
+  - selection highlight is explicit
+  - new characters stay in append order
+  - deletion removes the character and returns selection to a valid remaining entry
+- Replaced the broken prebattle preparation editor with a fresh implementation and verified it no longer black-screens.
+- Added project sanitization so malformed default sample data is corrected on load:
+  - misplaced skill entries are promoted back into the skill library
+  - default character sample references no longer report missing skills
+- Improved Inspector workspace labeling for prebattle/battle sim/balance analysis so these pages no longer show as unknown entities.
+- Removed duplicated "已保存" wording in the toolbar secondary save hint.
+- Replaced resource formula `eval` usage with a safe parser and validator supporting:
+  - arithmetic: `+ - * / ()`
+  - functions: `min`, `max`, `abs`, `floor`, `ceil`, `round`, `clamp`
+- Added inline resource formula validation messages and helper hints for supported variables/functions.
+- Split the main editor into lazy-loaded chunks and configured vendor chunking in Vite to reduce the initial bundle footprint.
+- Verified:
+  - `npx vite build` passes with no direct-eval warning
+  - resource model accepts function formulas and surfaces invalid function errors
+  - lazy-loaded editors still open correctly
+- Extended damage-formula validation to use the same safe evaluator, with supported-variable/function hints and explicit formula errors.
+- Rebuilt balance analysis to add strategy-RPG metrics:
+  - front/back damage share
+  - healing overflow rate
+  - role matchup/counter score
+- Rebuilt prebattle prep to add lineup templates plus draggable formation interactions in the UI.
+- Added a new Project Rules tab/library for tactical-RPG design presets:
+  - one-click import for missing recommended attributes
+  - one-click import for missing job templates
+  - copyable fixed-formula library
+  - one-click bundle import into the current project
+- Verified with browser checks:
+  - `output/playwright/analysis-new-metrics.png`
+  - `output/playwright/prebattle-formation-tab.png`
+  - `Template A` saves and appears in template list
+  - `output/playwright/rule-library-import.png`
+- Verified character and prebattle regressions with Playwright:
+  - `output/playwright/character-select-ellina.png`
+  - `output/playwright/character-delete-verified.png`
+  - `output/playwright/prebattle-defaults.png`
+  - `output/playwright/prebattle-enter-battlesim-fixed.png`

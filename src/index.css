@@ -1,0 +1,359 @@
+@import "tailwindcss";
+
+@theme {
+  --color-bg-primary: #0d1117;
+  --color-bg-secondary: #161b22;
+  --color-bg-tertiary: #21262d;
+  --color-bg-elevated: #30363d;
+  --color-border: #30363d;
+  --color-border-muted: #21262d;
+  --color-text-primary: #e6edf3;
+  --color-text-secondary: #8b949e;
+  --color-text-muted: #6e7681;
+  --color-accent: #58a6ff;
+  --color-accent-hover: #79b8ff;
+  --color-success: #3fb950;
+  --color-warning: #d29922;
+  --color-danger: #f85149;
+  --color-info: #58a6ff;
+  --color-element-fire: #ff7b72;
+  --color-element-water: #79c0ff;
+  --color-element-earth: #7ee787;
+  --color-element-wind: #a5d6ff;
+  --color-element-light: #f0e68c;
+  --color-element-dark: #bc8cff;
+}
+
+/* 确保根节点有变量，避免白屏 */
+:root {
+  --color-bg-primary: #0d1117;
+  --color-bg-secondary: #161b22;
+  --color-bg-tertiary: #21262d;
+  --color-bg-elevated: #30363d;
+  --color-border: #30363d;
+  --color-border-muted: #21262d;
+  --color-text-primary: #e6edf3;
+  --color-text-secondary: #8b949e;
+  --color-text-muted: #6e7681;
+  --color-accent: #58a6ff;
+  --color-accent-hover: #79b8ff;
+  --color-success: #3fb950;
+  --color-warning: #d29922;
+  --color-danger: #f85149;
+  --color-info: #58a6ff;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html, body, #root {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  background: #0d1117;
+  background: var(--color-bg-primary);
+  color: #e6edf3;
+  color: var(--color-text-primary);
+  overflow: hidden;
+}
+
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--color-bg-secondary);
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--color-bg-elevated);
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: var(--color-text-muted);
+}
+
+/* Resizer */
+.resizer {
+  background: var(--color-border-muted);
+  transition: background 0.2s;
+}
+
+.resizer:hover {
+  background: var(--color-accent);
+}
+
+/* Tree items */
+.tree-item {
+  cursor: pointer;
+  user-select: none;
+  position: relative;
+}
+
+.tree-item:hover {
+  background: var(--color-bg-tertiary);
+}
+
+.tree-item.selected {
+  background: var(--color-bg-tertiary);
+  color: var(--color-text-primary);
+}
+
+.tree-item.selected::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  width: 3px;
+  background: var(--color-accent);
+}
+
+.editor-panel {
+  background: var(--color-bg-secondary);
+  border: 1px solid var(--color-border);
+}
+
+.inspector-section {
+  border-bottom: 1px solid var(--color-border);
+}
+
+.drawer-handle {
+  cursor: ns-resize;
+}
+
+/* Input fields */
+.input-field {
+  background: var(--color-bg-primary);
+  border: 1px solid var(--color-border);
+  color: var(--color-text-primary);
+  padding: 4px 8px;
+  border-radius: 4px;
+  font-size: 13px;
+  transition: border-color 0.15s, box-shadow 0.15s;
+}
+
+.input-field:focus {
+  outline: none;
+  border-color: var(--color-accent);
+  box-shadow: 0 0 0 2px rgba(88, 166, 255, 0.2);
+}
+
+.input-field.error {
+  border-color: var(--color-danger);
+}
+
+.input-field.error:focus {
+  box-shadow: 0 0 0 2px rgba(248, 81, 73, 0.2);
+}
+
+.input-field::placeholder {
+  color: var(--color-text-muted);
+}
+
+/* Number input with stepper */
+.number-input {
+  display: flex;
+  align-items: center;
+  background: var(--color-bg-primary);
+  border: 1px solid var(--color-border);
+  border-radius: 4px;
+  overflow: hidden;
+}
+
+.number-input input {
+  background: transparent;
+  border: none;
+  color: var(--color-text-primary);
+  padding: 4px 8px;
+  font-size: 13px;
+  width: 60px;
+  text-align: center;
+}
+
+.number-input input:focus {
+  outline: none;
+}
+
+.number-input button {
+  background: var(--color-bg-tertiary);
+  border: none;
+  color: var(--color-text-secondary);
+  padding: 4px 8px;
+  cursor: pointer;
+  font-size: 12px;
+}
+
+.number-input button:hover {
+  background: var(--color-bg-elevated);
+  color: var(--color-text-primary);
+}
+
+/* Status badges */
+.status-dot {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  display: inline-block;
+}
+
+.status-dot.success { background: var(--color-success); }
+.status-dot.warning { background: var(--color-warning); }
+.status-dot.error { background: var(--color-danger); }
+.status-dot.info { background: var(--color-info); }
+.status-dot.muted { background: var(--color-text-muted); }
+
+/* Log levels */
+.log-info { color: var(--color-info); }
+.log-warn { color: var(--color-warning); }
+.log-error { color: var(--color-danger); }
+.log-system { color: var(--color-text-muted); }
+
+/* Risk levels */
+.risk-high { color: var(--color-danger); }
+.risk-medium { color: var(--color-warning); }
+.risk-low { color: var(--color-success); }
+
+/* Tab styles */
+.tab-button {
+  padding: 8px 16px;
+  font-size: 13px;
+  color: var(--color-text-secondary);
+  border-bottom: 2px solid transparent;
+  cursor: pointer;
+  transition: all 0.15s;
+}
+
+.tab-button:hover {
+  color: var(--color-text-primary);
+  background: var(--color-bg-tertiary);
+}
+
+.tab-button.active {
+  color: var(--color-accent);
+  border-bottom-color: var(--color-accent);
+}
+
+/* Data table */
+.data-table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 12px;
+}
+
+.data-table th {
+  background: var(--color-bg-tertiary);
+  color: var(--color-text-secondary);
+  font-weight: 500;
+  text-align: left;
+  padding: 8px 12px;
+  border-bottom: 1px solid var(--color-border);
+  white-space: nowrap;
+}
+
+.data-table td {
+  padding: 8px 12px;
+  border-bottom: 1px solid var(--color-border-muted);
+  color: var(--color-text-primary);
+}
+
+.data-table tr:hover td {
+  background: var(--color-bg-tertiary);
+}
+
+.data-table tr.selected td {
+  background: rgba(88, 166, 255, 0.1);
+}
+
+/* Stat card */
+.stat-card {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 8px 12px;
+  background: var(--color-bg-tertiary);
+  border-radius: 6px;
+  font-size: 12px;
+}
+
+.stat-card .stat-value {
+  font-weight: 600;
+  color: var(--color-text-primary);
+}
+
+.stat-card .stat-label {
+  color: var(--color-text-muted);
+}
+
+.stat-card.warning .stat-value {
+  color: var(--color-warning);
+}
+
+.stat-card.error .stat-value {
+  color: var(--color-danger);
+}
+
+/* Toolbar button */
+.toolbar-btn {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  padding: 4px 12px;
+  font-size: 12px;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: all 0.15s;
+  border: 1px solid transparent;
+}
+
+.toolbar-btn:hover {
+  background: var(--color-bg-tertiary);
+}
+
+.toolbar-btn.primary {
+  background: var(--color-accent);
+  color: white;
+}
+
+.toolbar-btn.primary:hover {
+  background: var(--color-accent-hover);
+}
+
+/* Badge/Count */
+.badge {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 18px;
+  height: 18px;
+  padding: 0 6px;
+  font-size: 10px;
+  font-weight: 600;
+  border-radius: 9px;
+  background: var(--color-bg-elevated);
+  color: var(--color-text-secondary);
+}
+
+.badge.error {
+  background: var(--color-danger);
+  color: white;
+}
+
+.badge.warning {
+  background: var(--color-warning);
+  color: white;
+}
+
+.badge.success {
+  background: var(--color-success);
+  color: white;
+}
+
+.badge.info {
+  background: var(--color-info);
+  color: white;
+}
